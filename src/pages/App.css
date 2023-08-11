@@ -25,21 +25,23 @@
   --highlight-color: rgba(0, 0, 0, 0.2);
 }
 /* Modificações do Body */
-body * {
+#App * {
   font-family: "inter", sans-serif;
   color: var(--text-color);
 }
 
-body {
+#App {
   background: var(--bg-url) no-repeat top center / cover;
   height: 100vh;
+
 }
 
 /* Modificações container */
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
+  margin: 0px auto 0px;
+  padding-top: 56px;
   padding: 0 24px;
 }
 
@@ -58,4 +60,32 @@ body {
     gap: 16px;
     font-size: 24px;
 
+}
+
+/* media queries */
+@media(max-width: 700px){
+    :root{
+        --bg-url: url(../img/bg-mobile.jpg)
+    }
+   .light{
+    --bg-url: url(../img/bg-mobile-light.jpg)
+   }
+
+}
+
+
+/* Animações */
+@keyframes slide-in {
+    from { left: 0;
+    } to {
+        left:50%;
+    }
+    
+}
+@keyframes slide-out {
+    from { left: 50%;
+    } to {
+        left:0;
+    }
+    
 }
