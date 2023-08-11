@@ -3,6 +3,7 @@ import { useState } from "react";
 import Switch from "../components/switch/switch";
 import Links from "../components/links/link";
 import SocialLinks from "../components/social-links/social-links";
+import Footer from "../components/footer/footer";
 
 import "./App.css";
 
@@ -34,6 +35,7 @@ const App = () => {
         <SocialLinks href={"#"} icon={"logo-instagram"} />
         
       </div>
+      <Footer link={"#"}>@Salmazo.f</Footer>
     </div>
   );
 };
